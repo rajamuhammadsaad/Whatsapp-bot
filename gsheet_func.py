@@ -4,7 +4,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 s = ['https://www.googleapis.com/auth/spreadsheets',
      'https://www.googleapis.com/auth/drive']
 
-creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", s)
+creds = ServiceAccountCredentials.from_json_keyfile_name("Credentials.json", s)
 client = gspread.authorize(creds)
 
 sheet = client.open("Reminders").sheet1
